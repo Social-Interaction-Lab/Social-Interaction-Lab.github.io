@@ -1,30 +1,35 @@
-title = "Notre-Dame de Paris"
-baseURL = "https://gohugo-theme-ananke.pages.dev"
+title = "Social Interaction Lab"
+baseURL = "https://social-interaction-lab.github.io/"
 languageCode = "en-us"
 theme = "ananke"
 resourceDir = "../resources"
-
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+Paginate = 6           # this is set low for demonstrating with dummy content.
 googleAnalytics = ""
 enableRobotsTXT = true
 
+
+
 [languages]
   [languages.en]
-    title = "Ananke"
+    title = "Social Interaction Lab"
     weight = 1
     contentDir = "content/en"
     # languageDirection = 'rtl' for Right-To-Left languages
-  [languages.fr]
-    title = "Ananke Fr"
+
+  [languages.cn]
+    title = "社会互动实验室"
     weight = 2
-    contentDir = "content/fr"
+    contentDir = "content/cn"
+
 
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
   filename = "sitemap.xml"
+
+
 
 [params]
   text_color = ""
@@ -32,10 +37,26 @@ enableRobotsTXT = true
   favicon = ""
   site_logo = ""
   description = "The last theme you'll ever need. Maybe."
-  # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   background_color_class = "bg-black"
-  recent_posts_number = 3
+  recent_posts_number = 2
 
-[[params.ananke_socials]]
-name = "twitter"
-url = "https://twitter.com/GoHugoIO"
+
+#########################
+######## hide ###########
+#########################
+# choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+
+
+#[[params.ananke_socials]]
+#name = "twitter"
+#url = "https://twitter.com/GoHugoIO"
+
+#[[menu.en]]
+#    name = "Home"
+#    url = "/"
+#    weight = 1
+
+#[[menu.cn]]
+#    name = "中文首页"
+#    url = "/cn/"
+#    weight = 1

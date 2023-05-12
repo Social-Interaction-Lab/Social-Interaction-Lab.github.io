@@ -1,10 +1,7 @@
 ---
-title: "Ananke: a Hugo Theme"
-
-description: "The last theme you'll ever need. Maybe."
-# 1. To ensure Netlify triggers a build on our exampleSite instance, we need to change a file in the exampleSite directory.
-theme_version: '2.8.2'
+title: "Welcome to Social Interaction Lab"
+description: "The website is testing. (Here can also blank)"
 cascade:
-  featured_image: '/images/gohugo-default-sample-hero-image.jpg'
+  featured_image: '/images/home/en-welcome.jpg'
 ---
-Welcome to my blog with some of my work in progress. I've been working on this book idea. You can read some of the chapters below.
+The website is testing. (Here can also blank)
