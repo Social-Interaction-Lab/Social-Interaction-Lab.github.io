@@ -24,16 +24,30 @@
         </div>
       </div>
 
-
       <div class="fl w-100 w-70-ns ph3-ns">
         <div class="bg-white h-100 pa4 card-bg-shadowed">
         {{/* custom text */}}
           {{ .Content }}
         </div>
       </div>
-
-
-
     </div>
   </main>
+
+
+<style>
+.card-bg-shadowed {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-container-single {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.text-center {
+  text-align: center;
+}
+</style>
+
+
 {{ end }}
