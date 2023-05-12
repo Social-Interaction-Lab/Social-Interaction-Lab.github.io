@@ -1,9 +1,9 @@
 ---
+title: News
 date: 2017-04-14T11:25:05-04:00
-description: "Esmeralda"
-featured_image: "/images/esmeralda.jpg"
-tags: []
-title: "Chapter VI: Esmeralda"
+newstitle: "Testarticleestarticleestarticleestestarticleestarticlearticleestarticle"
+featured_image: "/images/new20230508-pic.jpg"
+tags: [test]
 disable_share: false
 ---
 We are delighted to be able to inform the reader, that during the whole of
