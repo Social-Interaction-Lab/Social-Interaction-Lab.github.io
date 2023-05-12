@@ -39,6 +39,7 @@ enableRobotsTXT = true
   description = "The last theme you'll ever need. Maybe."
   background_color_class = "bg-black"
   recent_posts_number = 2
+  custom_css = "custom.css"
 
 
 #########################
