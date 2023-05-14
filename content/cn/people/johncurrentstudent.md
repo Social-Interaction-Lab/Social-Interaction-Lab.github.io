@@ -1,9 +1,9 @@
 ---
-title: People
+title: 成员
 customimage: /images/people/2.jpg
-customname: xiaoming Wang
+customname: 李小明
 customtype: PhD
-customresearch: Social cognition
+customresearch: 李小明的研究方向
 customemail: xiaomingwang@example.com
 grouptype: Current student
 social:
@@ -15,11 +15,11 @@ social:
     link: "https://github.com/johnsmith"
 ---
 
-# 1
+## 李小明的研究方向
 2343543
 
-# 2
+## 李小明的研究方向
 32545
 
-# 3
+## 李小明的研究方向
 32543

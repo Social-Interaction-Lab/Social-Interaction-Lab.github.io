@@ -1,8 +1,8 @@
 ---
-title: "欢迎来到社会互动实验室"
-description: "该网页正在测试中。（这里也可以空着不添加内容）"
+title: "欢迎来到社会互动与心理健康实验室"
+description: "Social Interaction & Mental Health Lab"
 cascade:
   featured_image: '/images/home/cn-welcome.jpg'
 ---
 
-该网页正在测试中。（这里也可以空着不添加内容）
+社会互动与心理健康实验室的研究社会互动与心理健康实验室的研究社会互动与心理健康实验室的研究社会互动与心理健康实验室的研究社会互动与心理健康实验室的研究社会互动与心理健

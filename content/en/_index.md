@@ -1,7 +1,8 @@
 ---
-title: "Welcome to Social Interaction Lab"
-description: "The website is testing. (Here can also blank)"
+title: "Welcome to Social Interaction & Mental Health Lab"
+description: ""
 cascade:
   featured_image: '/images/home/en-welcome.jpg'
 ---
-The website is testing. (Here can also blank)
+
+Our research interests are mainly in natural language processing and machine learning. We aim to build efficient, effective and ethical models for computing human languages.

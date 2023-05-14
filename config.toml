@@ -1,27 +1,78 @@
-title = "Social Interaction Lab"
+title = "Social Interaction & Mental Health Lab"
 baseURL = "https://social-interaction-lab.github.io/"
 languageCode = "en-us"
 theme = "ananke"
 resourceDir = "../resources"
 DefaultContentLanguage = "en"
-SectionPagesMenu = "main"
-Paginate = 6           # this is set low for demonstrating with dummy content.
+# SectionPagesMenu = "main"   # navigation from where.
+Paginate = 6                  # this is set low for demonstrating with dummy content.
 googleAnalytics = ""
 enableRobotsTXT = true
 
 
-
 [languages]
   [languages.en]
-    title = "Social Interaction Lab"
+    title = "Social Interaction & Mental Health Lab"
     weight = 1
+    #layoutDir = "layouts/en"
     contentDir = "content/en"
-    # languageDirection = 'rtl' for Right-To-Left languages
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "Home"
+        url = "/en/"
+        weight = 1
+      [[languages.en.menu.main]]
+        name = "Research"
+        url = "/research/"
+        weight = 2
+      [[languages.en.menu.main]]
+        name = "People"
+        url = "/people/"
+        weight = 3
+      [[languages.en.menu.main]]
+        name = "Publication"
+        url = "/publication/"
+        weight = 4
+      [[languages.en.menu.main]]
+        name = "News"
+        url = "/news/"
+        weight = 5
+      [[languages.en.menu.main]]
+        name = "Join us"
+        url = "/join-us/"
+        weight = 6
+
 
   [languages.cn]
-    title = "社会互动实验室"
+    title = "社会互动与心理健康实验室"
     weight = 2
+    #layoutDir = "layouts/zh"
     contentDir = "content/cn"
+    [languages.cn.menu]
+      [[languages.cn.menu.main]]
+        name = "主页"
+        url = "/cn/"
+        weight = 1
+      [[languages.cn.menu.main]]
+        name = "研究"
+        url = "/cn/research/"
+        weight = 2
+      [[languages.cn.menu.main]]
+        name = "成员"
+        url = "/cn/people/"
+        weight = 3
+      [[languages.cn.menu.main]]
+        name = "出版物"
+        url = "/cn/publication/"
+        weight = 4
+      [[languages.cn.menu.main]]
+        name = "新闻"
+        url = "/cn/news/"
+        weight = 5
+      [[languages.cn.menu.main]]
+        name = "加入我们"
+        url = "/cn/join-us/"
+        weight = 6
 
 
 [sitemap]
@@ -35,10 +86,13 @@ enableRobotsTXT = true
   author = ""
   favicon = ""
   site_logo = ""
-  description = "The last theme you'll ever need. Maybe."
+  description = ""
   background_color_class = "bg-black"
   recent_posts_number = 2
   recent_copy = "News"
+
+
+
 
 #########################
 ######## hide ###########
@@ -50,12 +104,3 @@ enableRobotsTXT = true
 #name = "twitter"
 #url = "https://twitter.com/GoHugoIO"
 
-#[[menu.en]]
-#    name = "Home"
-#    url = "/"
-#    weight = 1
-
-#[[menu.cn]]
-#    name = "中文首页"
-#    url = "/cn/"
-#    weight = 1

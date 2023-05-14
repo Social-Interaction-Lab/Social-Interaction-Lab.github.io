@@ -1,8 +1,14 @@
 {{ define "main" }}
 
- <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
-    {{ .Content }}
-  </article>
+<article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l mw8 center ph3-l lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
+  {{ .Content }}
+</article>
+
+
+{{ with .Site.GetPage "section" "research" }}
+  <a href="{{ .RelPermalink }}" class="link center db f3 pa3 br4 bg-mid-gray white dim w5 tc" style="border-radius: 50px;">Learn More</a>
+{{ end }}
+
 
 {{ $section := where .Site.RegularPages "Section" "in" (slice "news") }}
 {{ $section_count := len $section }}
@@ -26,9 +32,9 @@
       {{ end }}
     </section>
 
-      {{ with .Site.GetPage "section" "Join us" }}
-      <a href="{{ .RelPermalink }}" class="link db f4 pa2 br3 bg-mid-gray white dim w4 tc">Join us ！</a>
-      {{ end }}
+{{ with .Site.GetPage "section" "join us" }}
+  <a href="{{ .RelPermalink }}" class="link center db f3 pa3 br4 bg-mid-gray white dim w5 tc" style="border-radius: 50px;">JOIN US</a>
+{{ end }}
 
 
       </div>

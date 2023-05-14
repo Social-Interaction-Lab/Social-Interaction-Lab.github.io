@@ -9,10 +9,13 @@ grouptype: Alumi
 social:
   - title: "Homepage"
     link: "https://twitter.com/johnsmith"
+    icon: "fas fa-home"
   - title: "Twitter"
     link: "https://twitter.com/johnsmith"
+    icon: "fab fa-twitter"
   - title: "GitHub"
     link: "https://github.com/johnsmith"
+    icon: "fab fa-github"
 ---
 
 # Personal introduction
