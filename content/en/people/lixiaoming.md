@@ -1,11 +1,11 @@
 ---
+grouptype: PhD
 title: People
 customimage: /images/people/1.jpg
-customname: xiaoming Wang
+customname: lixiaoming
 customtype: PhD
 customresearch: wrewtyuiyyuertyuertyuertyurtyu
 customemail: yfhgj122432534aomingwang@example.com
-grouptype: Alumi
 social:
   - title: "Homepage"
     link: "https://twitter.com/johnsmith"
