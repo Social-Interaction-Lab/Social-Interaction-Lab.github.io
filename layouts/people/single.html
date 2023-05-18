@@ -7,13 +7,13 @@
           <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa0">
           <div class="text-center">
             <h2 class="f3 mb0 pa0" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-            <p class="f5 mb0 pa0 gray">{{ .Params.customtype }}</p>
+            <p class="f5 mb0 pa0 bold mid-gray">{{ .Params.customtype }}</p>
             <p class="f5 mb0 pa0" style="padding-left: 30px; padding-right: 30px;">{{ .Params.customemail }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
               {{ range .Params.social }}
                 <li class="dib mr0">
-                  <a href="{{ .link }}" target="_blank" class="f6 no-underline bold black bg-animate hover-bg-gold hover-white inline-flex items-center pa1" style="margin-bottom: 20px;"> 
+                  <a href="{{ .link }}" target="_blank" class="f6 bold no-underline  mid-gray bg-animate hover-bg-mid-gray hover-white inline-flex items-center pa1" style="margin-bottom: 20px;"> 
                   <span class="pl1">{{ .title }}</span>
                   </a>
                 </li>

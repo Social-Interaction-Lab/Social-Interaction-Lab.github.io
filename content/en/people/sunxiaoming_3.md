@@ -1,21 +1,18 @@
 ---
-grouptype: Undergraduate
+grouptype: Undergraduate students
 title: People
 customimage: /images/people/1.jpg
-customname: sunxiaoming
-customtype: PhD
-customresearch: wrewtyuiyyuertyuertyuertyurtyu
-customemail: yfhgj122432534aomingwang@example.com
+customname: Xiaoming Sun
+customtype: Undergraduate student
+customemail: wangxiaomingwangxiaoming@example.com
+customintro: I focus on making the machine understand linguistic syntax and semantic I focus on making the machine understand linguistic syntax and semantic
 social:
   - title: "Homepage"
-    link: "https://twitter.com/johnsmith"
-    icon: "fas fa-home"
+    link: "https://example.com/homepage"
   - title: "Twitter"
-    link: "https://twitter.com/johnsmith"
-    icon: "fab fa-twitter"
+    link: "https://twitter.com/yourusername"
   - title: "GitHub"
-    link: "https://github.com/johnsmith"
-    icon: "fab fa-github"
+    link: "https://github.com/yourusername"
 ---
 
 # Personal introduction

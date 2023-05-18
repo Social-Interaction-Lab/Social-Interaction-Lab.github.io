@@ -1,11 +1,11 @@
 ---
-grouptype: Master students
+grouptype: 导师
 title: People
-customimage: /images/people/1.jpg
-customname: Xiaoming Li
-customtype: Master student
-customemail: wangxiaomingwangxiaoming@example.com
-customintro: I focus on making the machine understand linguistic syntax and semantic I focus on making the machine understand linguistic syntax and semantic
+customimage: /images/people/pinew.jpg
+customname: 中文测试
+customtype: 导师
+customemail: exampleexampleexample@example.com
+customintro: "中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试"
 social:
   - title: "Homepage"
     link: "https://example.com/homepage"

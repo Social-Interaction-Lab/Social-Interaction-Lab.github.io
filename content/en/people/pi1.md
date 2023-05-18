@@ -2,20 +2,17 @@
 grouptype: PI
 title: People
 customimage: /images/people/pinew.jpg
-customname: lixiaoming
+customname: PIname
 customtype: PI
-customresearch: wrewtyuiyyuertyuertyuertyurtyu
-customemail: yfhgj122432534aomingwang@example.com
+customemail: exampleexampleexample@example.com
+customintro: "Agvsduhjkngfmkhlgdfmcghgd dfghjk ertfyghu ertygu drtfyuhjikl tyuiAgvsduhjkngfmkhlgdfmcghgd dfghjk ertfyghu ertygu drtfyuhjikl tyuiAgvsduhjkngfmkhlgdfmcghgd dfghjk ertfyghu ertygu drtfyuhjikl tyuiAgvsduhjkngfmkhlgdfmcghgd dfghjk ertfyghu ertygu drtfyuhjikl tyui"
 social:
   - title: "Homepage"
-    link: "https://twitter.com/johnsmith"
-    icon: "fas fa-home"
+    link: "https://example.com/homepage"
   - title: "Twitter"
-    link: "https://twitter.com/johnsmith"
-    icon: "fab fa-twitter"
+    link: "https://twitter.com/yourusername"
   - title: "GitHub"
-    link: "https://github.com/johnsmith"
-    icon: "fab fa-github"
+    link: "https://github.com/yourusername"
 ---
 
 # Personal introduction

@@ -1,10 +1,9 @@
 {{ define "main" }}
   <main class="mw10 center mt4 bg-white container-page-margin card-container-single">
-   
    <div class="mt5 card-container" style="margin-bottom: 50px; max-width: 100%">
     <div class="flex flex-column flex-row-l mt4  ">
+      {{ $pages := .Site.RegularPages.GroupByParam "grouptype" }}
 
-{{ $pages := .Site.RegularPages.GroupByParam "grouptype" }}
 {{ range $value := $pages }}
   {{ if eq $value.Key "PI" }}
     <section>
@@ -12,17 +11,19 @@
         <h1>{{ $value.Key }}</h1>
       </div>
       <div class="cf">
-        <div class="card-container-pi">
+        <div class="card-container">
           {{ range $value.Pages }}
-            <div class="fl w-50 w-25-l pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
+            <div class="fl w-50-ns  w-30-l  pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
                 <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100-ns br0 mb2 pa">
-                  <h2 class="f5 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
                 </a>
-                <p class="f5 mb3 gray bold" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customtype }}</p>
                 <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customemail }}</p>
-                <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customresearch }}</p>
+                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
+                {{ range .Params.customresearch }}
+               <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ . }}</p>
+               {{ end }}
               </div>
             </div>
           {{ end }}
@@ -35,11 +36,8 @@
 </div>
 
 
-
-
-{{ $pages := .Site.RegularPages.GroupByParam "grouptype" }}
 {{ range $value := $pages }}
-  {{ if eq $value.Key "PhD" }}
+  {{ if eq $value.Key "PhD students" }}
     <section>
       <div class="text-center">
         <h1>{{ $value.Key }}</h1>
@@ -51,10 +49,10 @@
               <div class="text-center">
                 <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
-                  <h2 class="f5 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
                 </a>
-                <p class="f5 mb3 gray bold" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customtype }}</p>
-                <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customresearch }}</p>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
               </div>
             </div>
           {{ end }}
@@ -64,9 +62,8 @@
   {{ end }}
 {{ end }}
 
-{{ $pages := .Site.RegularPages.GroupByParam "grouptype" }}
 {{ range $value := $pages }}
-  {{ if eq $value.Key "Master" }}
+  {{ if eq $value.Key "Master students" }}
     <section>
       <div class="text-center">
         <h1>{{ $value.Key }}</h1>
@@ -78,10 +75,10 @@
               <div class="text-center">
                 <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
-                  <h2 class="f5 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
                 </a>
-                <p class="f5 mb3 gray bold" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customtype }}</p>
-                <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customresearch }}</p>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
               </div>
             </div>
           {{ end }}
@@ -91,9 +88,8 @@
   {{ end }}
 {{ end }}
 
-{{ $pages := .Site.RegularPages.GroupByParam "grouptype" }}
 {{ range $value := $pages }}
-  {{ if eq $value.Key "Research Assistant" }}
+  {{ if eq $value.Key "Research assistants" }}
     <section>
       <div class="text-center">
         <h1>{{ $value.Key }}</h1>
@@ -105,10 +101,10 @@
               <div class="text-center">
                 <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
-                  <h2 class="f5 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
                 </a>
-                <p class="f5 mb3 gray bold" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customtype }}</p>
-                <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customresearch }}</p>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
               </div>
             </div>
           {{ end }}
@@ -118,9 +114,8 @@
   {{ end }}
 {{ end }}
 
-{{ $pages := .Site.RegularPages.GroupByParam "grouptype" }}
 {{ range $value := $pages }}
-  {{ if eq $value.Key "Undergraduate" }}
+  {{ if eq $value.Key "Undergraduate students" }}
     <section>
       <div class="text-center">
         <h1>{{ $value.Key }}</h1>
@@ -132,10 +127,10 @@
               <div class="text-center">
                 <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
-                  <h2 class="f5 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
                 </a>
-                <p class="f5 mb3 gray bold" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customtype }}</p>
-                <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customresearch }}</p>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
               </div>
             </div>
           {{ end }}
@@ -145,7 +140,6 @@
   {{ end }}
 {{ end }}
 
-{{ $pages := .Site.RegularPages.GroupByParam "grouptype" }}
 {{ range $value := $pages }}
   {{ if eq $value.Key "Alumni" }}
     <section>
@@ -159,10 +153,10 @@
               <div class="text-center">
                 <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
-                  <h2 class="f5 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
                 </a>
-                <p class="f5 mb3 gray bold" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customtype }}</p>
-                <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customresearch }}</p>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
               </div>
             </div>
           {{ end }}
@@ -173,7 +167,172 @@
 {{ end }}
 
 
-  </main>
+
+
+{{ range $value := $pages }}
+  {{ if eq $value.Key "导师" }}
+    <section>
+      <div class="text-center">
+        <h1>{{ $value.Key }}</h1>
+      </div>
+      <div class="cf">
+        <div class="card-container">
+          {{ range $value.Pages }}
+            <div class="fl w-50-ns  w-30-l  pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
+              <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
+                  <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100-ns br0 mb2 pa">
+                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                </a>
+                <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customemail }}</p>
+                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
+                {{ range .Params.customresearch }}
+               <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ . }}</p>
+               {{ end }}
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
+</div>
+</div>
+
+
+{{ range $value := $pages }}
+  {{ if eq $value.Key "博士生" }}
+    <section>
+      <div class="text-center">
+        <h1>{{ $value.Key }}</h1>
+      </div>
+      <div class="cf">
+        <div class="card-container">
+          {{ range $value.Pages }}
+            <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
+              <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
+                  <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
+                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
+
+{{ range $value := $pages }}
+  {{ if eq $value.Key "硕士生" }}
+    <section>
+      <div class="text-center">
+        <h1>{{ $value.Key }}</h1>
+      </div>
+      <div class="cf">
+        <div class="card-container">
+          {{ range $value.Pages }}
+            <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
+              <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
+                  <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
+                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
+
+{{ range $value := $pages }}
+  {{ if eq $value.Key "研究助理" }}
+    <section>
+      <div class="text-center">
+        <h1>{{ $value.Key }}</h1>
+      </div>
+      <div class="cf">
+        <div class="card-container">
+          {{ range $value.Pages }}
+            <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
+              <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
+                  <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
+                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
+
+{{ range $value := $pages }}
+  {{ if eq $value.Key "本科生" }}
+    <section>
+      <div class="text-center">
+        <h1>{{ $value.Key }}</h1>
+      </div>
+      <div class="cf">
+        <div class="card-container">
+          {{ range $value.Pages }}
+            <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
+              <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
+                  <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
+                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
+
+{{ range $value := $pages }}
+  {{ if eq $value.Key "毕业生" }}
+    <section>
+      <div class="text-center">
+        <h1>{{ $value.Key }}</h1>
+      </div>
+      <div class="cf">
+        <div class="card-container">
+          {{ range $value.Pages }}
+            <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
+              <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
+                  <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
+                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}
+
+
+</main>
 
 <style>
 .container-page-margin {
@@ -182,15 +341,6 @@
 }
 
 .card-container {
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.card-container-pi {
-  width: 1200px;
-  margin: 0 auto;
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -224,16 +374,8 @@
   margin: 5 auto;
   max-width: 100%;
   }
-
-
-.card-container-pi {
-  width: 800px;
-  margin: 5 auto;
-  max-width: 100%;
 }
 
-
-}
 
 }
 </style>
