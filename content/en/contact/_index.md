@@ -1,8 +1,6 @@
 ---
-title: Contact
+title: Join us!
 ---
-
-# Join us!
 
 We are actively looking for self-motivated students to join our group. Feel free to contact us if you are interested. People with basic experience in natural language processing and are desired to explore in this field will be preferred.
 
