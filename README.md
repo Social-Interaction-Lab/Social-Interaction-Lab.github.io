@@ -13,7 +13,7 @@ The website is powered by [Hugo](https://gohugo.io/) and built using [Ananke Goh
 	- [x] Optimize "Research" page 
  - [x] Build "People" page with custom 
 	- [x] Optimize "People" page 
-	- [ ] Optimize social media icon
+	- [x] Optimize social media icon
  - [x] Build "Publication" page with custom 
 	- [x] Optimize "Publication" page 
  - [x] Build "News" page with custom 

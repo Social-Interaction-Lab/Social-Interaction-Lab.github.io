@@ -13,8 +13,8 @@
             <ul class="list pl0 mb3 mt3">
               {{ range .Params.social }}
                 <li class="dib mr0">
-                  <a href="{{ .link }}" target="_blank" class="f6 bold no-underline  mid-gray bg-animate hover-bg-mid-gray hover-white inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <span class="pl1">{{ .title }}</span>
+                  <a href="{{ .link }}" target="_blank" class="f6 bold no-underline mid-gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
+                  <i class="{{ .icon }}" style="font-size: 30px"></i>
                   </a>
                 </li>
               {{ end }}
