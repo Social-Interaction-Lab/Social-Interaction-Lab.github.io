@@ -15,9 +15,11 @@
           {{ range $value.Pages }}
             <div class="fl w-50-ns  w-30-l  pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100-ns br0 mb2 pa">
                   <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                </a>
+                <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customemail }}</p>
                 <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
                 {{ range .Params.customresearch }}
                <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ . }}</p>
@@ -56,10 +58,11 @@
           {{ range $value.Pages }}
             <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
                   <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <h4 class="f5 mb0 pa0 ">{{ .Params.customtype }}</h4>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
                 <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
@@ -92,10 +95,11 @@
           {{ range $value.Pages }}
             <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
                   <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <h4 class="f5 mb0 pa0 ">{{ .Params.customtype }}</h4>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
                 <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
@@ -128,10 +132,11 @@
           {{ range $value.Pages }}
             <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
                   <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <h4 class="f5 mb0 pa0 ">{{ .Params.customtype }}</h4>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
                 <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
@@ -164,10 +169,11 @@
           {{ range $value.Pages }}
             <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
                   <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <h4 class="f5 mb0 pa0 ">{{ .Params.customtype }}</h4>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
                 <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
@@ -200,10 +206,11 @@
           {{ range $value.Pages }}
             <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
                   <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <h4 class="f5 mb0 pa0 ">{{ .Params.customtype }}</h4>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
                 <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
@@ -239,9 +246,11 @@
           {{ range $value.Pages }}
             <div class="fl w-50-ns  w-30-l  pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100-ns br0 mb2 pa">
                   <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                </a>
+                <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customemail }}</p>
                 <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
                 {{ range .Params.customresearch }}
                <p class="f5 mb3 mt3" style="padding-left: 20px; padding-right: 20px;">{{ . }}</p>
@@ -280,10 +289,11 @@
           {{ range $value.Pages }}
             <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
                   <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <h4 class="f5 mb0 pa0 ">{{ .Params.customtype }}</h4>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
                 <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
@@ -316,10 +326,11 @@
           {{ range $value.Pages }}
             <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
                   <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <h4 class="f5 mb0 pa0 ">{{ .Params.customtype }}</h4>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
                 <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
@@ -352,10 +363,11 @@
           {{ range $value.Pages }}
             <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
                   <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <h4 class="f5 mb0 pa0 ">{{ .Params.customtype }}</h4>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
                 <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
@@ -388,10 +400,11 @@
           {{ range $value.Pages }}
             <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
                   <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <h4 class="f5 mb0 pa0 ">{{ .Params.customtype }}</h4>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
                 <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
@@ -424,10 +437,11 @@
           {{ range $value.Pages }}
             <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
               <div class="text-center">
+                <a href="{{ .Permalink }}" class="no-underline black">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
                   <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <h4 class="f5 mb0 pa0 ">{{ .Params.customtype }}</h4>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
+                </a>
+                <p class="f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
                 <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
@@ -471,7 +485,7 @@
 }
 
 .card-bg-shadowed {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .card-between-margin {

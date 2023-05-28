@@ -1,7 +1,7 @@
 ---
 grouptype: 导师
 title: People
-customimage: /images/people/pinew.jpg
+customimage: /images/people/pinew.png
 customname: 中文测试
 customtype: 导师
 customemail: exampleexampleexample@example.com
@@ -27,16 +27,3 @@ social:
     icon: "fa-brands fa-weibo"
     link: "https://github.com/yourusername"
 ---
-
-# Personal introduction
-Agvsduhjkngfmkhlgdfmcghgd dfghjk ertfyghu ertygu drtfyuhjikl tyui
-
-
-
-# Publication
-- rtyghujghjkl
-
-- rtyuio
-
-- retyuio
-

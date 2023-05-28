@@ -1,7 +1,7 @@
 ---
 grouptype: 毕业生
 title: People
-customimage: /images/people/1.jpg
+customimage: /images/people/1.png
 customname: 中文
 customtype: 硕士
 customemail: zhaoxiaomingwangxiaoming@example.com
@@ -23,16 +23,4 @@ social:
     icon: "fa-brands fa-weibo"
     link: "https://github.com/yourusername"
 ---
-
-# Personal introduction
-Agvsduhjkngfmkhlgdfmcghgd dfghjk ertfyghu ertygu drtfyuhjikl tyui
-
-
-
-# Publication
-- rtyghujghjkl
-
-- rtyuio
-
-- retyuio
 
