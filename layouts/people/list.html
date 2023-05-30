@@ -27,7 +27,7 @@
               {{ range .Params.social }}
                 <li class="dib mr0">
                   <a href="{{ .link }}" target="_blank" class="f6 bold no-underline gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <i class="{{ .icon }}" style="font-size: 30px"></i>
+                  <i class="{{ .icon }}" style="font-size: 25px"></i>
                   </a>
                 </li>
               {{ end }}
@@ -66,7 +66,7 @@
               {{ range .Params.social }}
                 <li class="dib mr0">
                   <a href="{{ .link }}" target="_blank" class="f6 bold no-underline gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <i class="{{ .icon }}" style="font-size: 30px"></i>
+                  <i class="{{ .icon }}" style="font-size: 25px"></i>
                   </a>
                 </li>
               {{ end }}
@@ -102,7 +102,7 @@
               {{ range .Params.social }}
                 <li class="dib mr0">
                   <a href="{{ .link }}" target="_blank" class="f6 bold no-underline gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <i class="{{ .icon }}" style="font-size: 30px"></i>
+                  <i class="{{ .icon }}" style="font-size: 25px"></i>
                   </a>
                 </li>
               {{ end }}
@@ -138,7 +138,7 @@
               {{ range .Params.social }}
                 <li class="dib mr0">
                   <a href="{{ .link }}" target="_blank" class="f6 bold no-underline gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <i class="{{ .icon }}" style="font-size: 30px"></i>
+                  <i class="{{ .icon }}" style="font-size: 25px"></i>
                   </a>
                 </li>
               {{ end }}
@@ -174,7 +174,7 @@
               {{ range .Params.social }}
                 <li class="dib mr0">
                   <a href="{{ .link }}" target="_blank" class="f6 bold no-underline gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <i class="{{ .icon }}" style="font-size: 30px"></i>
+                  <i class="{{ .icon }}" style="font-size: 25px"></i>
                   </a>
                 </li>
               {{ end }}
@@ -196,21 +196,20 @@
         <h1>{{ $value.Key }}</h1>
       </div>
       <div class="cf">
-        <div class="card-container">
+        <div class="card-container-alumni">
           {{ range $value.Pages }}
-            <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
+            <div class="fl pr0-ns mb2 mb0-ns bg-white card-between-margin-alumni card-bg-shadowed">
               <div class="text-center">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
-                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <h4 class="f5 mb0 pa0 ">{{ .Params.customtype }}</h4>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
-                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
+                  <h2 class="f4 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                <h4 class="f6 mb0 pa0 ">{{ .Params.customtype }}</h4>
+                <p class="mid-gray f7 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
               {{ range .Params.social }}
                 <li class="dib mr0">
                   <a href="{{ .link }}" target="_blank" class="f6 bold no-underline gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <i class="{{ .icon }}" style="font-size: 30px"></i>
+                  <i class="{{ .icon }}" style="font-size: 25px"></i>
                   </a>
                 </li>
               {{ end }}
@@ -251,7 +250,7 @@
               {{ range .Params.social }}
                 <li class="dib mr0">
                   <a href="{{ .link }}" target="_blank" class="f6 bold no-underline gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <i class="{{ .icon }}" style="font-size: 30px"></i>
+                  <i class="{{ .icon }}" style="font-size: 25px"></i>
                   </a>
                 </li>
               {{ end }}
@@ -290,7 +289,7 @@
               {{ range .Params.social }}
                 <li class="dib mr0">
                   <a href="{{ .link }}" target="_blank" class="f6 bold no-underline gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <i class="{{ .icon }}" style="font-size: 30px"></i>
+                  <i class="{{ .icon }}" style="font-size: 25px"></i>
                   </a>
                 </li>
               {{ end }}
@@ -326,7 +325,7 @@
               {{ range .Params.social }}
                 <li class="dib mr0">
                   <a href="{{ .link }}" target="_blank" class="f6 bold no-underline gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <i class="{{ .icon }}" style="font-size: 30px"></i>
+                  <i class="{{ .icon }}" style="font-size: 25px"></i>
                   </a>
                 </li>
               {{ end }}
@@ -362,7 +361,7 @@
               {{ range .Params.social }}
                 <li class="dib mr0">
                   <a href="{{ .link }}" target="_blank" class="f6 bold no-underline gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <i class="{{ .icon }}" style="font-size: 30px"></i>
+                  <i class="{{ .icon }}" style="font-size: 25px"></i>
                   </a>
                 </li>
               {{ end }}
@@ -398,7 +397,7 @@
               {{ range .Params.social }}
                 <li class="dib mr0">
                   <a href="{{ .link }}" target="_blank" class="f6 bold no-underline gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <i class="{{ .icon }}" style="font-size: 30px"></i>
+                  <i class="{{ .icon }}" style="font-size: 25px"></i>
                   </a>
                 </li>
               {{ end }}
@@ -420,21 +419,20 @@
         <h1>{{ $value.Key }}</h1>
       </div>
       <div class="cf">
-        <div class="card-container">
+        <div class="card-container-alumni">
           {{ range $value.Pages }}
-            <div class="fl w-20-ns pr0-ns mb4 mb0-ns bg-white card-between-margin card-bg-shadowed">
+            <div class="fl pr0-ns mb2 mb0-ns bg-white card-between-margin-alumni card-bg-shadowed">
               <div class="text-center">
                   <img src="{{ .Params.customimage }}" alt="{{ .Params.customname }}" class="db w-100 br0 mb2 pa">
-                  <h2 class="f3 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
-                <h4 class="f5 mb0 pa0 ">{{ .Params.customtype }}</h4>
-                <p class="mid-gray f5 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
-                <p class="f5 mb3 mt3 gray" style="padding-left: 20px; padding-right: 20px;">{{ .Params.customintro }}</p>
+                  <h2 class="f4 mb0 text-center" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customname }}</h2>
+                <h4 class="f6 mb0 pa0 ">{{ .Params.customtype }}</h4>
+                <p class="mid-gray f7 mb3" style="padding-left: 10px; padding-right: 10px;">{{ .Params.customemail }}</p>
           {{ if .Params.social }}
             <ul class="list pl0 mb3 mt3">
               {{ range .Params.social }}
                 <li class="dib mr0">
                   <a href="{{ .link }}" target="_blank" class="f6 bold no-underline gray bg-animate inline-flex items-center pa1" style="margin-bottom: 20px;"> 
-                  <i class="{{ .icon }}" style="font-size: 30px"></i>
+                  <i class="{{ .icon }}" style="font-size: 25px"></i>
                   </a>
                 </li>
               {{ end }}
@@ -453,6 +451,24 @@
 </main>
 
 <style>
+
+  .card-container-alumni {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+  
+.card-container-alumni .card-between-margin-alumni {
+    flex-basis: calc(16.66% - 20px);
+    margin-bottom: 20px;
+  }
+
+.card-between-margin-alumni:hover {
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+
 .container-page-margin {
   margin: 5 auto;
   max-width: 85%;
@@ -492,6 +508,11 @@
   margin: 5 auto;
   max-width: 100%;
   }
+
+  .card-container-alumni .card-between-margin-alumni {
+    flex-basis: 45%;
+  }
+
 }
 
 

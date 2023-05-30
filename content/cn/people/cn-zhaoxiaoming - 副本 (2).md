@@ -1,11 +1,11 @@
 ---
-grouptype: Alumni
+grouptype: 毕业生
 title: People
 customimage: /images/people/1.png
-customname: Xiaoming Zhao
-customtype: Master
+customname: 中文
+customtype: 硕士
 customemail: zhaoxiaoming@example.com
-customintro: I focus on making the machine understand linguistic syntax and semantic I focus on making the machine understand linguistic syntax 
+customintro: 中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试中文测试
 social:
   - title: "Homepage"
     icon: "fa-solid fa-house"
@@ -19,7 +19,8 @@ social:
   - title: "Bilibii"
     icon: "fa-brands fa-bilibili"
     link: "https://github.com/yourusername"
-  - title: "Weibo"
-    icon: "fa-brands fa-weibo"
+  - title: "Bilibii"
+    icon: "fa-brands fa-bilibili"
     link: "https://github.com/yourusername"
 ---
+
