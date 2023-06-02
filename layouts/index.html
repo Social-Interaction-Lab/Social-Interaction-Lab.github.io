@@ -6,7 +6,7 @@
 
 
 {{ with .Site.GetPage "section" "research" }}
-  <a href="{{ .RelPermalink }}" class="link center db f3 pa3 br4 bg-mid-gray white dim w5 tc" style="border-radius: 50px;">Learn More</a>
+  <a href="{{ .RelPermalink }}" class="link center db f3 pa3 br4 bg-gray white dim w5 tc" style="border-radius: 50px;">LEARN MORE</a>
 {{ end }}
 
 
@@ -33,10 +33,18 @@
     </section>
 
 {{ with .Site.GetPage "section" "contact" }}
-  <a href="{{ .RelPermalink }}" class="link center db f3 pa3 br4 bg-mid-gray white dim w5 tc" style="border-radius: 50px;">JOIN US</a>
+  <a href="{{ .RelPermalink }}" class="link center db f3 pa3 br4 bg-gray white dim w5 tc" style="border-radius: 50px;">JOIN US</a>
 {{ end }}
 
 
       </div>
+
+<style>
+.cf {
+  font-size: 23px;
+}
+</style>
+
+
   {{ end }}
 {{ end }}

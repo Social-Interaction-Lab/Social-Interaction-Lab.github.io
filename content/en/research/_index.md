@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: RESAERCH
 ---
 
 Our research interests are mainly in natural language processing and machine learning. We aim to build efficient, effective and ethical models for computing human languages.

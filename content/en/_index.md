@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Social Interaction & Mental Health Lab"
+title: "Social Interaction & Mental Health Lab"
 description: ""
 cascade:
   featured_image: '/images/home/en-welcome.jpg'

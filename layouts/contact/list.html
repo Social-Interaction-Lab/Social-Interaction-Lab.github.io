@@ -1,22 +1,25 @@
 {{ define "main" }}
 <main class="center pa3 pa4-ns nested-copy-line-height page-width">
     <div class="flex">
-      <section class="page-margin mid-gray ph2 ph4-l pv2 pv2-l f3 tl" style="flex: 2;">
+      <section class="page-margin black ph2 ph4-l pv2 pv2-l f3 tl" style="flex: 2;">
         {{- .Content -}}
-      </section>
-      <section class="page-margin mid-gray ph2 ph4-l pv2 pv2-l f3 tl" style="flex: 1;">
-        {{- readFile "contact/_index2.md" | markdownify -}}
       </section>
     </div>
   </main>
 
   <style>
+
+    a {
+     color: black;
+     text-decoration: none;
+    }
+
     .page-margin {
       padding: 1px 20px; /* top/bottom left/right */
     }
 
     .page-width {
-     width: 90%; 
+     width: 80%; 
      margin: 0 auto;
     }
 

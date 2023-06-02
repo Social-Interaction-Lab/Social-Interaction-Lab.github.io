@@ -1,5 +1,5 @@
 ---
-title: Publication
+title: PUBLICATION
 ---
 
 ## 2023
